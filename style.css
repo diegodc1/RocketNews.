@@ -77,12 +77,17 @@ form input {
     width: 580px;
     outline: 0;
     padding: 10px;
+    padding-bottom: 6px;
     font-size: 20px;
+    font-family: 'Spartan', sans-serif;
+    font-weight: 700;
+    align-items: center;
 }
 
 form button {
     background-color: var(--bg-button-color);
     width: 40px;
+    cursor: pointer;
 }
 
 form button img {
@@ -111,5 +116,249 @@ a {
     color: var(--bg-button-color);
 }
 
+
+/***** MEDIAS QUERIES *****/
+
+/* Extra large devices */
+@media only screen and (max-width: 3000px) {
+
+    body {
+        margin: 0;
+        margin-left: 45px;
+        background: var(--body-bg-color);
+    }
+
+    #logo {
+        width: 430px;
+        height: 130px;
+        margin-top: 50px;
+    }
+
+    main h1 {
+        font-size: 40px;
+        margin-top: 65px;
+    }
+    
+    main h2, p {
+        margin-top: 1px; 
+        font-size: 22.4px;
+        margin-top: 8px;
+    }
+
+    #form-title {
+        margin-top: 45px;
+    }
+
+    #form-title p {
+        font-size: 19px;
+    }
+
+    form input {
+        width: 970px;
+        height: 50px;
+        font-size: 30px;   
+    }
+      
+    a {
+        font-size: 21px;
+    }
+}
+
+/* Extra Large devices */
+ @media only screen and (max-width: 1800px) {
+
+    
+    body {
+        margin-left: 16px;
+    }
+
+    #logo {
+        width: 390px;
+        height: 110px;
+        margin-top: 50px;
+    }
+
+    .background img {
+        position: absolute;
+        z-index: -1;
+        height: 100vh;
+        width: calc(100vw - 50%);
+        right: 0;
+    }
+
+    main h1 {
+        font-size: 30px;
+        margin-top: 100px;
+    }
+    
+    main h2, p {
+        font-size: 15.4px;
+        margin-top: 8px;
+    }
+
+    #form-title {
+        margin-top: 45px;
+    }
+
+    #form-title p {
+        font-size: 15.4px;
+    }
+
+    form input {
+        width: 757px;
+        font-size: 21px;
+    }
+      
+    a {
+        font-size: 16px;
+    }
+}
+
+/* Large devices */
+@media (max-width: 1439px) {
+    .background img {
+        opacity: 20%;
+        height: 100vh;
+        box-shadow: 2px solid green;
+
+    }
+}
+
+/* Medium devices */
+ @media only screen and (max-width: 1023px) {
+    .background img {
+        opacity: 0%;
+    }
+
+    form input {
+        height: 40px;
+        width: 500px;
+        font-size: 15px;
+    }
+} 
+
+/* Small devices */
+@media only screen and (max-width: 767px) {
+       
+    #logo {
+        width: calc(100vw - 20%);
+        height: 90px;
+        margin-top: 50px;
+        margin-left: 26px;
+    }
+
+    main h1 {
+        font-size: 23px;
+        margin-top: 120px;
+        margin-right: 8px;
+
+    }
+    
+    main h2, p {
+        font-size: 13px;
+        margin-top: 8px;
+        margin-right: 11px;
+    }
+
+    #form-title {
+        margin-top: 45px;
+    }
+
+    #form-title p {
+        font-size: 13px;
+    }
+
+    form input {
+        width: calc(100vw - 19%);
+        font-size: 15px;
+    }
+      
+    a {
+        font-size: 13px;
+    }
+}
+
+/* Extra small devices */
+@media only screen and (max-width: 385px) {
+    main h1 {
+        margin-top: 80px;
+    }
+}
+
+/* Extra small devices */
+@media only screen and (max-width: 374px) {
+
+    main h1 {
+        font-size: 21px;
+        margin-top: 80px;
+        margin-right: 8px;
+    }
+
+    main h2, p {
+        font-size: 13px;
+        margin-top: 8px;
+        margin-right: 8px;
+    }
+
+    form input {
+        width: calc(100vw - 24%);
+        font-size: 15px;
+        height: 40px;
+    }
+}
+
+/* Medium devices */
+@media only screen and (min-height: 920px)  {
+    body {
+        margin: 0;
+        margin-left: 45px;
+        background: var(--body-bg-color);
+    }
+
+    .background img {
+        opacity: 20%;
+        position: absolute;
+        z-index: -1;
+        height: calc(100vh - 50%);
+        width: 100vw;
+        right: 0;
+        bottom: 0;
+    }
+
+    #logo {
+        width: calc(100vw - 20%);
+        height: 130px;
+        margin-top: 50px;
+    }
+
+    main h1 {
+        font-size: 40px;
+        margin-top: 65px;
+    }
+    
+    main h2, p {
+        margin-top: 1px; 
+        font-size: 22.4px;
+        margin-top: 8px;
+    }
+
+    #form-title {
+        margin-top: 15vh;
+    }
+
+    #form-title p {
+        font-size: 19px;
+    }
+
+    form input {
+        width: calc(100vw - 25%);
+        height: 50px;
+        font-size: 20px;   
+    }
+      
+    a {
+        font-size: 21px;
+    }
+}
 
 
